@@ -29,8 +29,8 @@ func TestEncryptDecryptAES(t *testing.T) {
 
 	t.Run("Encrypt with provided key and Decrypt", func(t *testing.T) {
 		// Encrypt with a user-provided 16-byte (AES-128) key
-		userKey := []byte("a 16-byte key..") // 16 byte
-		args := &Args{Key: &userKey}         // <- sesuaikan type
+		userKey := []byte("abnmqwertyo12345") // 16 byte
+		args := &Args{Key: &userKey}          // <- sesuaikan type
 
 		encryptResult, err := Encrypt(plaintext, args)
 		if err != nil {
